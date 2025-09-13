@@ -1,0 +1,153 @@
+#education{
+  padding-top: 70px;
+  padding-bottom: 70px;
+  box-sizing: border-box;
+  justify-content: start;
+  background-image: url('../../assets/wp-lines.png'); /* Arkaplan resminin yolu */
+  background-position: center; /* Resmi ortala */
+  background-size: contain;
+}
+#education-row-align-id{
+  gap: 4%;
+}
+.school-box {
+  box-sizing: border-box;
+  overflow: hidden;
+  gap: 10px;
+  transition: background-color 0.4s ease;
+  max-width: 100%; 
+  display: flex; 
+  align-items: center; 
+  width: 100%;
+  gap: 1rem; 
+}
+.school-box:hover{
+  background-color: transparent;
+}
+
+
+.school-logo {
+  width: clamp(80px, 7vw, 120px);
+  height: clamp(80px, 7vw, 120px);
+  max-width: 100%; 
+  max-height: 150px; 
+}
+
+
+#win-gif{
+  border-radius: 50%;
+  min-width: clamp(80px, 7vw, 120px);
+  min-height : clamp(80px, 7vw, 120px);
+  justify-content: center;
+  align-self: center; 
+  transform-origin: center; 
+  transition: transform 0.1s linear; 
+}
+
+#win-gif.rotate {
+  transform: rotate(360deg); 
+}
+
+
+@media (max-width: 900px) {
+  #win-gif{
+    display: none;
+  }
+}
+
+@media (max-width: 750px) {
+  #win-gif{
+    display: inline;
+    width: fit-content;
+    justify-content: center;
+    align-self: center;
+    border-radius: 50%;
+  }
+  
+  #education-row-align-id{
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.background-effect {
+  z-index: -1;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.scrolling-text-l {
+  display: flex;
+  gap: 20px; 
+  position: relative;
+  color: white;
+  background: linear-gradient(to left, #eb2b052a, #ffffff2a, #ffee0000); /* Işık efekti */
+  background-size: 200%; 
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+  animation: scroll-left 15s linear infinite, light-effect 5s linear infinite;
+  font-size: 5rem;
+}
+.scrolling-text-r {
+  display: flex;
+  gap: 20px; 
+  position: relative;
+  color: white;
+  background: linear-gradient(to left, #eb2b052a, #ffffff2a, #ffee0000); /* Işık efekti */
+  background-size: 200%; 
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+  animation: scroll-right 15s linear infinite, light-effect 5s linear infinite;
+  font-size: 5rem;
+}
+
+.scrolling-text span {
+  flex-shrink: 0; 
+}
+@keyframes light-effect {
+  0% {
+      background-position: 200% 0;
+  }
+  100% {
+      background-position: -200% 0;
+  }
+}
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}

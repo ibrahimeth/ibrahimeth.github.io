@@ -1,0 +1,167 @@
+/***********   NEW   ****************/
+#projects{
+    padding-top: 70px;
+    padding-bottom: 70px;
+    justify-content: start;
+    box-sizing: border-box;
+    justify-content: start;
+    background-image: url('../../assets/wp-about.png'); 
+    background-position: top; 
+}
+.project-container{
+    border-radius: 7px;
+    border: 3px #000000 solid;
+    height: 300px;
+    padding: 23px;
+    background-color: #00060e5b;
+}
+
+.project-container > div:not(:last-child) {
+    padding-bottom: 15px;
+}
+.project-container-title {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    font-size:20px;
+    font-weight: 800;
+    color: var(--secondary-color);
+}
+
+.project-container-subtitle{
+    font-size: clamp(15px, 2vw, 18px);
+    color: #d7d7d7;
+    display: flex;
+    padding-top: 11px;
+    padding: 0px;
+    margin: 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+}
+
+.project-container-content {
+    text-align: justify;       /* iki yana yasla */
+    text-align-last: justify;  /* son satırı da yasla (isteğe bağlı) */
+    line-height: 1.6;  
+    height: auto; 
+    font-size: Clamp(7px, 5vw, 16px);
+}
+
+.project-container-tag {
+    padding: 1%;
+    justify-content: center;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #040D16 ;
+}
+
+.project-container-ico {
+    height: 120px;
+    width: 120px;
+    border: var(--secondary-color) solid 2px;
+    border-radius: 6px;
+    align-items: end;
+    align-content: end;
+    align-self: last baseline;
+    justify-content: end;
+    justify-items: end;
+    justify-items: end;
+    text-justify: end;
+    margin-left: 4%;
+}
+
+.project-container-share-button{
+    border-radius: 50%;
+    width: clamp(35px, 4vw, 40px);
+    height: clamp(35px, 4vw, 40px);
+    background-color: rgb(6, 33, 63);
+    border: solid 1px black;
+    text-decoration: none;
+    margin-right: clamp(5px, 2vw, 11px);
+    transition: all 0.4s ease;
+    text-align: center;
+    padding-top: 2px;
+    box-sizing: border-box;
+    align-content: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.project-container-share-button:hover  , .project-container-share-button-text:hover {
+    background-color: var(--secondary-color);
+}
+.project-container-share-button-text{
+    border-radius: 11px;
+    margin: 0px;
+    padding: 10px;
+    width: auto;
+    height: clamp(35px, 4vw, 40px);
+    background-color: rgb(6, 33, 63);
+    border: solid 1px black;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    box-sizing: border-box;
+    align-content: center;
+    justify-content: center;
+    cursor: pointer;
+    color: white;
+}
+.project-container-share-button-text > .row, .inside-row{
+    gap: 10px;
+}
+
+#project-container-footer-column{
+    gap: Clamp(4px, 10vw, 15px);
+}
+
+/* Tablet */
+@media (max-width: 1700px) {
+    .grid-flat {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .project-container-ico{
+        width: Clamp(80px, 20vw, 100px);
+        height: Clamp(80px, 20vw, 100px);
+    }
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .grid-flat {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 1000px) {
+  .project-container-ico{
+    width: Clamp(80px, 10vw, 100px);
+    height: Clamp(80px, 10vw, 100px);
+  }
+}
+/* Telefon */
+@media (max-width: 719px) {
+    .grid-flat {
+        grid-template-columns: 1fr;
+    }
+    .project-container{
+        height: 100;
+    }
+    .project-container-ico{
+        width: Clamp(90px, 20vw, 100px);
+        height: Clamp(90px, 20vw, 100px);
+    }
+}
+@media (max-width: 400px) {
+    .project-container-ico{
+        width: Clamp(30px, 20vw, 100px);
+        height: Clamp(30px, 20vw, 100px);
+    }
+    .project-container-share-button-text  .textXS {
+        display: none;
+    }
+    #project-container-footer-column .row {
+        justify-content: start;
+        gap: Clamp(5px, 1vw, 10px);
+    }
+}
+
+
+
+/*
+BURADA 900 - 
+*/

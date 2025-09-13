@@ -1,0 +1,132 @@
+#about{
+    padding-top: 70px;
+    padding-bottom: 3%;
+    box-sizing: border-box;
+    justify-content: start;
+    background-image: url('../../assets/wp-about.png'); 
+    background-position: top; 
+}
+
+#about-row-div{
+    box-sizing: border-box;
+    justify-content: start;
+}
+#about div.row, #about div.column{ /* about section içerisindeki bütün row divlerinin özelliklerini ekle*/
+    gap: clamp(10px, 3vw, 30px)
+}
+
+.image-box {
+    border-radius: 7px;
+    padding: 0px;
+}
+
+.image-box img{
+    border-radius: 7px;
+    max-width: 400px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6); /* X offset, Y offset, Blur radius, Shadow color */
+}
+
+#pp6{
+    display: none;
+}
+
+.about-box{
+    opacity: 0; 
+    transform: translateY(30px); 
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out; 
+    border-radius: 7px;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(4px); 
+    -webkit-backdrop-filter: blur(4px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    padding: clamp(15px, 3vw, 30px);
+    background-color: #00060e5b;
+    border: solid 2px black;
+}
+.about-box.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.about-box p {
+    width: 100%;
+    text-align: justify; 
+    font-size: 16px; 
+    line-height: 1.6;
+    color: #ffffff; /* Yazı rengi */
+    margin: 0;
+    padding: 0;
+}
+
+#duck-gif {
+    max-width: 100%;
+}
+
+#about-gif-align-id{
+    min-width: 25%;
+    width: 100%;
+    gap: clamp(10px, 2vw, 20px) ;
+}
+
+#about-summary-box{
+    box-sizing: border-box;
+    align-content: center;
+    max-width: 100%;
+    height: 100%;
+}
+
+
+@media (max-width: 1650px) {
+    #about-row-div{
+        flex-direction: column;
+    }
+    #about-gif-align-id{
+        flex-direction: row;
+    }
+    #plant-gif-box{
+        padding: 0px;
+        width: auto;
+        flex: 1;
+    }
+    #about-summary-box{
+        flex: 2;
+    }
+    .about-box p {
+        font-size: Clamp(14px, 7vw, 16px); /* Yazı boyutunu küçült */
+    }
+}
+ /* Hepsi Yataya geçiyor */
+@media (max-width: 720px) {
+    #about-all-align {
+        flex-direction: column;
+    }
+    .image-box img {
+        width: 100%;
+        max-width: 100%;
+    }
+    .about-box p {
+        font-size: 14px; /* Yazı boyutunu küçült */
+    }
+    #pp5{
+        display: none;
+    }
+    #pp6{
+        display: flex;
+    }
+    #about-summary-box {
+        height: auto;
+    }
+    #about-gif-align-id {
+        height: auto;
+    }
+    #about-gif-align-id .about-box:first-child {
+        padding: 5px; /* İstediğiniz padding değerini buraya yazın */
+    }
+  
+}
+@media (max-width: 480px) {
+   
+    #about-summary-box {
+        font-size: 12px;
+    }
+}
