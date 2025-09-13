@@ -10,7 +10,7 @@
 
 .certificate-container{
   border-radius: 7px;
-  min-width: Clamp(300px, 30vw, 400px);
+  min-width: Clamp(250px, 35vw, 400px);
   height: auto;
   background-color: #00060e5b;
   border: 3px #000000 solid;

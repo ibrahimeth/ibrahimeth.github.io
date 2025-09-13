@@ -154,6 +154,11 @@
     .project-container-share-button-text  .textXS {
         display: none;
     }
+    .project-container-share-button-text svg{
+        width: 20px;
+        height: 20px;
+    }
+  
     #project-container-footer-column .row {
         justify-content: start;
         gap: Clamp(5px, 1vw, 10px);

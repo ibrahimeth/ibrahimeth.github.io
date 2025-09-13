@@ -7,9 +7,11 @@
     background-color: #00060e5b;
     border-top: 5px solid var(--secondary-color);
     background-image: url('../../assets/wp7.png'); 
-    background-position: top; 
+    background-position: center; 
     display: flex;
-    height: 300px;
+    height: Clamp(200px, 40vw, 300px);
+    background-size: contain ;
+    background-repeat: repeat-x;
     justify-content: center;
 }
 
@@ -19,10 +21,10 @@
     align-self: center;
     align-items: center;
 }
-#contact .project-container-share-button-text {
-    width: Clamp(50px, 10vw, 130px);
-}
 
+#contact .textXS {
+    font-size: clamp(8px, 2vw, 15px);
+}
 #contact .column {
     gap: Clamp(10px, 5vw, 30px);
 }
